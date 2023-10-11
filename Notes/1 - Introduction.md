@@ -10,3 +10,13 @@ Nos tempos modernos e com a expansão dos meios de comunicação, surgiu a neces
 
 As queries são efetuadas nos documentos já analisados e rankeados, e para isso os dados iniciais precisam de ser processados e transformados em documentos num formato favorável.
 
+## Information Processing
+
+
+
+## Information Retrieval
+
+
+
+## Information Search
+
