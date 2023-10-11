@@ -30,4 +30,3 @@ Google search é um "ad hoc search" na medida em que é uma busca independente p
 - **Desktop Search**: Para sistemas single-user, focado em procurar informações que estão em computadores. Incluem ficheiros, definições e pastas. São muito diferentes para cada sistema operativo.
 
 - **App Specific Search**: Pesquisa dentro de uma aplicação específica.
-
