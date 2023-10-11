@@ -20,9 +20,13 @@ Aumentar o valor dos dados:
 
 Existem vários padrões de processamento de dados, como por exemplo:
 
+### ETL
+
+Extract, Transform, Load. É normalmente associada a operações de IT centralizadas.
+
 ### ELT
 
-### ETL
+Evolução do ETL, onde 
 
 ### OSEMN
 
