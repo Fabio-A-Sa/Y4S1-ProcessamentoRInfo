@@ -38,3 +38,12 @@ Evolução do ETL, onde há Extract, Load e Transform. Para uma melhor divisão 
 
 Há iteração entre estas etapas e podem inclusive não ser feitas por esta ordem. O processo pode ser **centralizado** em departamentos e **descentralizado** em equipas especializadas.
 
+Por um lado é bom ter o sistema centralizado (permite maior controlo e reutilização de modos de processamento), mas por outro pode demorar tempo por dependerem de um único departamento nas decisões.
+
+Os Data Engineers desenham, implementam e mantêm os processamentos das pipelines de dados. 
+
+## Open Data
+
+O conceito de FAIR (findable, accessible, interoperable, reusable) é usado para Open Data. Esses dados podem ser estruturados e não estruturados. 
+
+## Data Selection
