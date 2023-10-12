@@ -26,7 +26,15 @@ Extract, Transform, Load. É normalmente associada a operações de IT centraliz
 
 ### ELT
 
-Evolução do ETL, onde 
+Evolução do ETL, onde há Extract, Load e Transform. Para uma melhor divisão das responsibilidades, pois data engineer e data analyst podem trabalhar em paralelo e de forma independente.
 
 ### OSEMN
+
+- `Obtain`;
+- `Scrub` - limpar, arranjar, preparar;
+- `Explore` - observar, experimentar e visualizar;
+- `Model` - criar um modelo estatístico;
+- `Interpret` - retirar conclusões, avaliando e interligando os resultados;
+
+Há iteração entre estas etapas e podem inclusive não ser feitas por esta ordem. O processo pode ser **centralizado** em departamentos e **descentralizado** em equipas especializadas.
 
