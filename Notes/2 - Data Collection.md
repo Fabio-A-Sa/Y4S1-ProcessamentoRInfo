@@ -47,3 +47,5 @@ Os Data Engineers desenham, implementam e mantêm os processamentos das pipeline
 O conceito de FAIR (findable, accessible, interoperable, reusable) é usado para Open Data. Esses dados podem ser estruturados e não estruturados. 
 
 ## Data Selection
+
+É importante saber se o autor dos dados é confiável, se pode ser contactado, se os dados são regularmente atualizados, se os dados incluem informação da data da sua aquisição e se são plausíveis.
