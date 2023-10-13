@@ -49,3 +49,15 @@ O conceito de FAIR (findable, accessible, interoperable, reusable) é usado para
 ## Data Selection
 
 É importante saber se o autor dos dados é confiável, se pode ser contactado, se os dados são regularmente atualizados, se os dados incluem informação da data da sua aquisição e se são plausíveis.
+
+A serialização dos dados numa pipeline permite uma manipulação in-memory, mas ao mesmo tempo restringe o funcionamento a uma só linguagem de programação. Pode ser de dois formatos:
+- `JSON and XML Serialization`: mais comuns, bastante suportados, mas tem ambiguidade em em termos de números e dados binários (imagens);
+- `Binary Serialization`: menos visual mas é mais compacta e rápida. 
+
+Uma boa escolha de dados passa por estudá-los antes de processá-los:
+- Missing data, inconsistent, duplicated, precision problems;
+- Analisar a tendência, como a média, e a dispersão;
+- Diagramas de frequência, 
+-
+-
+-
