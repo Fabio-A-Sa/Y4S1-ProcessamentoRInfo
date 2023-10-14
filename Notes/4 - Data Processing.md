@@ -18,4 +18,3 @@ Usado quando a aplicação é maioritariamente N-N. Há vértices (nós ou entid
 ### 4 - Triple-Store Model
 
 Formado por tuplos com três itens: subject, predicate, object. Exemplo: (PRI, course, M.EIC). 
-
