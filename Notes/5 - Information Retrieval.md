@@ -2,7 +2,7 @@
 
 ## NPL
 
-O processamento de linguagem natural pode e deve ser usado para Information Retrieval. Extrai informação estruturada para melhor compreensão, extrai também relações, entidades e sentimentos. Conceitos principais:
+O processamento de linguagem natural pode e deve ser usado para Information Retrieval, embora seja desafiante porque a linguagem é ambígua. Extrai informação estruturada para melhor compreensão, extrai também relações, entidades e sentimentos. Conceitos principais:
 
 - `Tokenization`: partir o texto em palavras ou tokens com significado individual;
 - `Part-of-Speach (POS) tagging`: dar assign aos tokens, com base em dados gramáticos (verbo, adjectivo);
@@ -20,5 +20,9 @@ Pode também ser usada para vários fins:
 - **Machine Learning**: para análise de sentimentos;
 - **Deep Learning**: para tradução de textos com base em transformers;
 
-### Fundamentos de NPL
+#### Representação textual
+
+- Baseada pela frequência: Bag of Words (BOW), TF-IDF, N-grams (sequências de N tokens contínuos);
+- Baseada pela representação semântica: Word Embeddings (king - man + woman = queen), Document Embeddings, Topic Models;
+- Baseada pela estrutura: Syntax-Based Representations, Graph-Based Representations;
 
