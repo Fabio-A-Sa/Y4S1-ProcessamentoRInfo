@@ -24,8 +24,21 @@ Processo não determinístico que visa retirar um subconjunto aleatório de dado
 
 Agrupar os dados para eliminar um detalhe excessivo. Os operadores são por norma: média, mediana, mínimo, máximo, percentil.
 
-## Tools
+### 4 -  Tools
 
 - Data cleaning: OpenRefine;
 - Data preparation: Beautiful Soup, NLTK;
 - Data processing: R, Python Pandas;
+
+##  Data pipelines
+
+Conjunto de processos sequenciais que transformam os dados de diversas formas e de diversos destinos. Devem ser confiáveis, escaláveis e passíveis de manutenção. <br>
+As principais ferramentas para automatizar as pipelines são: Makefiles, Apache Airflow, Apache Beam, Apache NiFi, Apache Kafka, Apache Flinks.
+
+### Data Flow Diagrams (DFD)
+
+Uma boa forma de documentar as pipelines:
+- `Squares`: para representar entidades externas, sources or destinations;
+- `Rounded rectangles`: os processos, devem ter como input os dados e output um refinamento desses mesmos dados;
+- `Arrows`: o flow dos dados no sistema ou pipeline;
+- `Storage`: acompanhado com o formato (SQL, CSV, JSON);
