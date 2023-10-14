@@ -1,5 +1,7 @@
 # Information Retrieval
 
+Forma de encontrar e extrair informação relevante de grandes coleções de dados naturalmente não estruturados, como textos. A pesquisa é feita com base em documentos (resultado da reestruturação dos dados iniciais). Não confundir com bases de dados: aqui os resultados são ordenados por relevância.
+
 ## NPL
 
 O processamento de linguagem natural pode e deve ser usado para Information Retrieval, embora seja desafiante porque a linguagem é ambígua. Extrai informação estruturada para melhor compreensão, extrai também relações, entidades e sentimentos. Conceitos principais:
