@@ -57,7 +57,6 @@ A serialização dos dados numa pipeline permite uma manipulação in-memory, ma
 Uma boa escolha de dados passa por estudá-los antes de processá-los:
 - Missing data, inconsistent, duplicated, precision problems;
 - Analisar a tendência, como a média, e a dispersão;
-- Diagramas de frequência, 
--
--
--
+- Diagramas de frequência - histogramas, 
+
+No entanto esta abordagem apenas apresenta um sumário, pois os dados possuem mais características. Os `outliers` e `missing data` são exemplos de partes que podem ser analisados de forma descritiva mas também de exploratória visualização.
