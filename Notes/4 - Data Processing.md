@@ -1,6 +1,6 @@
 # Data Processing
 
-É o processo que inclui também o `Data Storage`. Por motivos de documentação é importante a criação de um **Data Model** que garanta uma abstração dos documentos finais. Há alguns tipos:
+É o processo que inclui também o `Data Storage` e `Data Presentation`. Por motivos de documentação é importante a criação de um **Data Model** que garanta uma abstração dos documentos finais. Há alguns tipos:
 
 ### 1 - Relational Model
 
@@ -18,3 +18,4 @@ Usado quando a aplicação é maioritariamente N-N. Há vértices (nós ou entid
 ### 4 - Triple-Store Model
 
 Formado por tuplos com três itens: subject, predicate, object. Exemplo: (PRI, course, M.EIC). 
+
