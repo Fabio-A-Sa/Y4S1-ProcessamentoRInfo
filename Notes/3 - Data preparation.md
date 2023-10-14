@@ -24,5 +24,8 @@ Processo não determinístico que visa retirar um subconjunto aleatório de dado
 
 Agrupar os dados para eliminar um detalhe excessivo. Os operadores são por norma: média, mediana, mínimo, máximo, percentil.
 
-## Data preparation tools
+## Tools
 
+- Data cleaning: OpenRefine;
+- Data preparation: Beautiful Soup, NLTK;
+- Data processing: R, Python Pandas;
