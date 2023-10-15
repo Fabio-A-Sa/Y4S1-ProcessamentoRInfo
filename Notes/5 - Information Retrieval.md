@@ -43,3 +43,5 @@ Uma search engine que usa Lucene e está preparado para um deploy em servidores 
 - highlighting;
 - autocomplete
 
+### Solr Key Concepts
+
