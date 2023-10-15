@@ -51,4 +51,6 @@ Uma search engine que usa Lucene e está preparado para um deploy em servidores 
     1. `Analysers`: gera um token stream a partir do texto inicial;
     2. `Tokenizers`: recebe um character stream e retorna uma sequência de token objects;
     3. `Filters`: examina os tokens recebidos e transforma, descarta, deixa, cria novos;
-
+- Pode ter vários `cors`/`indexes`, que guardam a informação dos documentos indexados;
+- Suporta REST API para indexes e para queries;
+- 
