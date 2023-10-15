@@ -46,8 +46,9 @@ Uma search engine que usa Lucene e está preparado para um deploy em servidores 
 ### Solr Key Concepts
 
 - A informação mais básica de Solr é o `document`;
-- Cada document é coposto por `fields`, e cada um tem um tipo específico (date, currency, text, uuid...);
+- Cada document é coposto por `fields`, e cada um tem um tipo específico (date, currency, text, uuid...). Os tipos e definições são declarados em **schema file**;
 - Os `textual fields` são tratados numa pipeline com três processos:
-    1. `Analysers`: 
-    2. `Tokenizers`:
-    3. `Filters`:
+    1. `Analysers`: gera um token stream a partir do texto inicial;
+    2. `Tokenizers`: recebe um character stream e retorna uma sequência de token objects;
+    3. `Filters`: examina os tokens recebidos e transforma, descarta, deixa, cria novos;
+
