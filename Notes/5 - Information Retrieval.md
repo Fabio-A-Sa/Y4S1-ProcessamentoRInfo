@@ -34,8 +34,12 @@ Plataforma de pesquisa de código aberto escrita em Java, escalável, que serve 
 
 ### Lucene
 
-Biblioteca escrita em Java que contém os blocos fundamentais para implementar capacidades de searching, indexing e ranking.
+Biblioteca escrita em Java que contém os blocos fundamentais para implementar capacidades de searching, indexing e ranking, através de um querying parsing.
 
 ### Solr
 
-Uma search engine que usa Lucene e está preparado para um deploy em servidores de larga escala e com grandes volumes de dados.
+Uma search engine que usa Lucene e está preparado para um deploy em servidores de larga escala e com grandes volumes de dados. Possui uma interface e pesquisas com:
+- faceting;
+- highlighting;
+- autocomplete
+
