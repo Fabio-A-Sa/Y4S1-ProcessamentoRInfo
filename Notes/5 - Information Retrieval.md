@@ -28,3 +28,14 @@ Pode também ser usada para vários fins:
 - Baseada pela representação semântica: Word Embeddings (king - man + woman = queen), Document Embeddings, Topic Models;
 - Baseada pela estrutura: Syntax-Based Representations, Graph-Based Representations;
 
+## Apache Solr
+
+Plataforma de pesquisa de código aberto escrita em Java, escalável, que serve para retornar conteúdos ordenados por relevância. Interage-se com o sistema com base em REST API HTTP, com respostas em JSON ou XML.
+
+### Lucene
+
+Biblioteca escrita em Java que contém os blocos fundamentais para implementar capacidades de searching, indexing e ranking.
+
+### Solr
+
+Uma search engine que usa Lucene e está preparado para um deploy em servidores de larga escala e com grandes volumes de dados.
