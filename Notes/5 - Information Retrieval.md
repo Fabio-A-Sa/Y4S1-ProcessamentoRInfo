@@ -72,7 +72,7 @@ $ docker exec <PROJECT_NAME> solr create_core -c <CORE_NAME>
 - Deste modo, os documentos a inserir no seguinte passo podem ser indexados sem definições extra (*schemaless mode*). A inserção é feita através de um pedido POST:
 
 ```bash
-$ curl -X POST -H 'Content-type:application/json' \ --data-binary "@./<DATA.JSON>" \ http://localhost:8983/solr/<PROJECT_NAME>/update\?commit\=true
+$ curl -X POST -H 'Content-type:application/json' \ --data-binary "@./<FILE>.json" \ http://localhost:8983/solr/<PROJECT_NAME>/update\?commit\=true
 ```
 
 #### Queries
@@ -81,10 +81,44 @@ Ou usando diretamente o `Solr Admin`, ou então através de requests:
 
 ```bash
 $ curl http://localhost:8983/solr/<PROJECT_NAME>/query -d '{ "query": "content:portugal"}'
-$ curl 'http://localhost:8983/solr/<PROJECT_NAME>/select?q=*&fl=id,title' # retorna apenas o ID e o NAME
+$ curl 'http://localhost:8983/solr/<PROJECT_NAME>/select?q=*&fl=id,title' # retorna apenas o ID e o TITLE
 ```
 
 Uma das limitações de `schemaless` é que os acentos importam.
 
 #### Schemas
+
+Há três tipos não-primitivos que podem ser definidos:
+- `Fields`: título de um campo de texto e contexto desse campo;
+- `dynamicFields`: para indexar campos que não estão explícitos no schema, mas que podem ser pesquisados com base em patterns. Por exemplo, definir um novo field para todos os fields que acabem em "_txt";
+- `copyFields`: copiam automaticamente o conteúdo de um field para outro. Usados para remover pontuação nas queries mas deixar o field original para visualização;
+
+A estrutura do schema pode ser loaded usando o comando:
+
+```bash
+$ curl -X POST -H 'Content-type:application/json' \ --data-binary "@./<FILE>.json" \ http://localhost:8983/solr/<PROJECT_NAME>/schema
+```
+
+Para definir um novo schema, o anterior deve ser eliminado. E só depois há o load dos documentos a consultar. Um exemplo de ficheiro de configuração do schema:
+
+```json
+{
+    "add-field-type": [
+        {
+        "name":"newsContent",
+        "class":"solr.TextField"
+        }
+    ],
+
+    "add-field": [
+        {
+        "name": "content",
+        "type": "newsContent",
+        "indexed": true
+        }
+    ] 
+}
+```
+
+Para cada field, há possibilidade de adicionar informações sobre o `indexAnalyser` e o `queryAnalyser`. Cada analyser pode conter um `tokenizer` e vários `filters`.
 
