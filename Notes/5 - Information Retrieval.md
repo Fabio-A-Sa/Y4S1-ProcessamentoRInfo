@@ -43,7 +43,7 @@ Uma search engine que usa Lucene e está preparado para um deploy em servidores 
 - highlighting;
 - autocomplete
 
-### Solr Key Concepts
+#### Solr Key Concepts
 
 - A informação mais básica de Solr é o `document`;
 - Cada document é coposto por `fields`, e cada um tem um tipo específico (date, currency, text, uuid...). Os tipos e definições são declarados em **schema file**;
@@ -53,4 +53,7 @@ Uma search engine que usa Lucene e está preparado para um deploy em servidores 
     3. `Filters`: examina os tokens recebidos e transforma, descarta, deixa, cria novos;
 - Pode ter vários `cors`/`indexes`, que guardam a informação dos documentos indexados;
 - Suporta REST API para indexes e para queries;
-- 
+- Os `query parsers` convertem uma string de pesquisa numa query em Lucene e encontra os documentos selecionados;
+
+#### Setup and run
+
