@@ -77,3 +77,14 @@ $ curl -X POST -H 'Content-type:application/json' \ --data-binary "@./<DATA.JSON
 
 #### Queries
 
+Ou usando diretamente o `Solr Admin`, ou então através de requests:
+
+```bash
+$ curl http://localhost:8983/solr/<PROJECT_NAME>/query -d '{ "query": "content:portugal"}'
+$ curl 'http://localhost:8983/solr/<PROJECT_NAME>/select?q=*&fl=id,title' # retorna apenas o ID e o NAME
+```
+
+Uma das limitações de `schemaless` é que os acentos importam.
+
+#### Schemas
+
