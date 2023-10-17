@@ -156,4 +156,35 @@ Os `tokenizers` vão quebrar o texto numa stream de tokens de acordo com uma reg
 - Lower case, limita non-letters e coverte todas depois para lowercase. White spaces e non-letters são descartados;
 - N-Gram, gera streams com N tokens. Bom para pesquisa contextual;
 
-Os `filters` 
+Os `filters` processam a stream de tokens e gera um conjunto diferente de tokens, com base em transformações, eliminações e afins. Há [uma grande lista](https://solr.apache.org/guide/solr/latest/indexing-guide/filters.html) de filtros disponívels para Solr. Exemplos:
+- ASCII Folding: converte tudo no seu equivalente ASCII code;
+- Lowercase: converte qualquer caracter não-lowercase em lowercase;
+- Stop: descarta qualquer token que possua palavras de stop. Podem ser indicadas num ficheiro;
+- Snowball Porter Stemmer: aplica patterns com base numa linguagem específica;
+
+#### Parsers
+
+- `Standard`, é o mais simples mas também intolerante em erros de sintaxe;
+- `DisMax`, permite cometer alguns erros, apropriado para aplicações gerais;
+- `eDisMax`, ou extended DisMax, pois também permite queries mais complexas;
+
+Com **eDisMax** podemos simplesmente:
+
+```note
+defType=edismax&qf=title+content+summary&q=flower
+````
+
+em vez de 
+
+```note
+q=title:flower+AND+content:flower+AND+summary:flower
+```
+
+#### Pesos
+
+Também dá para atribuir pesos aos atributos a pesquisar:
+
+```note
+qf=title^5+content+summary^3
+```
+
