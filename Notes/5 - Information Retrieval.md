@@ -187,4 +187,3 @@ Também dá para atribuir pesos aos atributos a pesquisar:
 ```note
 qf=title^5+content+summary^3
 ```
-
