@@ -120,5 +120,33 @@ Para definir um novo schema, o anterior deve ser eliminado. E só depois há o l
 }
 ```
 
-Para cada field, há possibilidade de adicionar informações sobre o `indexAnalyser` e o `queryAnalyser`. Cada analyser pode conter um `tokenizer` e vários `filters`.
+Para cada field, há possibilidade de adicionar informações sobre o `indexAnalyser` e o `queryAnalyser`. Cada analyser pode conter um só `tokenizer` e vários `filters`.
 
+```json
+{
+    "add-field-type": [
+        {
+            "name":"newsContent",
+            "class":"solr.TextField",
+            "indexAnalyzer": {
+                "tokenizer": {
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters": [
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"},
+                ],
+            },
+            "queryAnalyzer": {
+                "tokenizer": {
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ],
+            }
+        }
+    ]
+}
+```
