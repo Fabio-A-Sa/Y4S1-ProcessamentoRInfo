@@ -57,3 +57,23 @@ Uma search engine que usa Lucene e está preparado para um deploy em servidores 
 
 #### Setup and run
 
+- Colocar o Apache Solr a correr usando o Docker:
+
+```bash
+$ docker run --name <PROJECT_NAME> -d -p 8983:8983 solr
+```
+
+- Criar um novo `core` para agrupar informação sobre os futuros documentos a indexar:
+
+```bash
+$ docker exec <PROJECT_NAME> solr create_core -c <CORE_NAME>
+```
+
+- Deste modo, os documentos a inserir no seguinte passo podem ser indexados sem definições extra (*schemaless mode*). A inserção é feita através de um pedido POST:
+
+```bash
+$ curl -X POST -H 'Content-type:application/json' \ --data-binary "@./<DATA.JSON>" \ http://localhost:8983/solr/<PROJECT_NAME>/update\?commit\=true
+```
+
+#### Queries
+
