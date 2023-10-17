@@ -150,3 +150,10 @@ Para cada field, há possibilidade de adicionar informações sobre o `indexAnal
     ]
 }
 ```
+
+Os `tokenizers` vão quebrar o texto numa stream de tokens de acordo com uma regra. Há uma grande lista de possíveis a usar no projecto, ver [aqui](https://solr.apache.org/guide/solr/latest/indexing-guide/tokenizers.html). Alguns exemplos:
+- Standard, usa white spaces e pontuação;
+- Lower case, limita non-letters e coverte todas depois para lowercase. White spaces e non-letters são descartados;
+- N-Gram, gera streams com N tokens. Bom para pesquisa contextual;
+
+Os `filters` 
