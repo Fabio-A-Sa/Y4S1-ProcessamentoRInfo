@@ -48,7 +48,7 @@ Uma search engine que usa Lucene e está preparado para um deploy em servidores 
 - A informação mais básica de Solr é o `document`;
 - Cada document é coposto por `fields`, e cada um tem um tipo específico (date, currency, text, uuid...). Os tipos e definições são declarados em **schema file**;
 - Os `textual fields` são tratados numa pipeline com três processos:
-    1. `Analysers`: gera um token stream a partir do texto inicial;
+    1. `Analysers`: gera um token stream a partir do texto inicial. Contêm duas partes principais: os tokenizers e os filters;
     2. `Tokenizers`: recebe um character stream e retorna uma sequência de token objects;
     3. `Filters`: examina os tokens recebidos e transforma, descarta, deixa, cria novos;
 - Pode ter vários `cors`/`indexes`, que guardam a informação dos documentos indexados;
