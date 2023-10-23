@@ -195,3 +195,11 @@ A avaliação é o coração da **Information Retrieval** e depende da tarefa, d
 - `Eficácia`: medida da habilidade do sistema encontrar a informação certa;
 - `Eficiência`: medida da habilidade do sistema encontrar informação rapidamente;
 
+Em termos de eficácia, a avaliação passa por identificar um conjunto de documentos, classificá-los em relevantes ou não e depois recorrer à percentagem retornada pelo sistema de busca.
+
+#### Paradigma de Cranfield
+
+Proporcionou o fundamento para as avaliações atuais de sistemas de informação e culmina no cálculo de valores de Precision e Recal:
+
+- `Precision`: 
+- `Recall`: 
