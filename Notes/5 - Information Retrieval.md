@@ -199,7 +199,9 @@ Em termos de eficácia, a avaliação passa por identificar um conjunto de docum
 
 #### Paradigma de Cranfield
 
-Proporcionou o fundamento para as avaliações atuais de sistemas de informação e culmina no cálculo de valores de Precision e Recal:
+Proporcionou o fundamento para as avaliações atuais de sistemas de informação e culmina no cálculo de valores de Precision e Recal, que são baseados em conjuntos:
 
-- `Precision`: 
-- `Recall`: 
+- `Precision`: Número de documentos relevantes retirados / Número total de documentos retirados;
+- `Recall`: Número de documentos relevantes retirados / Número de documentos relevantes do sistema;
+- `Accuracy`: true (positives | negatives) / total;
+
