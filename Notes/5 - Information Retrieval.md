@@ -187,3 +187,10 @@ Também dá para atribuir pesos aos atributos a pesquisar:
 ```note
 qf=title^5+content+summary^3
 ```
+
+## Evaluation
+
+A avaliação é o coração da **Information Retrieval** e depende da tarefa, da coleção (news articles, web pages, scientific articles) e do tipo de informação necessária. É importante para entender o uso do sistema por parte dos utilizadores e definir novos designs e implementações com base no feedback recebido. É importante distinguir duas coisas:
+
+- `Eficácia`: 
+- `Eficiência`: 
