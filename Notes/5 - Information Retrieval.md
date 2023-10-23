@@ -212,3 +212,11 @@ Proporcionou o fundamento para as avaliações atuais de sistemas de informaçã
 
 ### Ranked
 
+#### Precision Recall Curves
+
+Para cada subconjunto de documentos rankeados retornados, e para cada sequência de documentos nesse subconjunto, calcular valores de (recall, precision) para desenhar a curva.
+
+#### Precision at K (P@K)
+
+No caso da WEB, a maioria dos utilizadores não precisa de grande recall, ou seja, não interessa a percentagem de resultados relevantes dado todos os documentos importantes, mas sim a quantidade de documentos relevantes naquele conjunto retornado. Assim, a precisão toma uma importante função e é necessário escolher a quantidade K adequada para que a precisão seja máxima.
+
