@@ -190,7 +190,11 @@ qf=title^5+content+summary^3
 
 ## Evaluation
 
-A avaliação é o coração da **Information Retrieval** e depende da tarefa, da coleção (news articles, web pages, scientific articles) e do tipo de informação necessária. É importante para entender o uso do sistema por parte dos utilizadores e definir novos designs e implementações com base no feedback recebido. É importante distinguir duas coisas da satisfação dos utilizadores:
+A avaliação é o coração da **Information Retrieval** e depende da tarefa, da coleção (news articles, web pages, scientific articles) e do tipo de informação necessária. É importante para entender o uso do sistema por parte dos utilizadores e definir novos designs e implementações com base no feedback recebido. 
+
+### Not Ranked
+
+É importante distinguir duas coisas da satisfação dos utilizadores:
 
 - `Eficácia`: medida da habilidade do sistema encontrar a informação certa;
 - `Eficiência`: medida da habilidade do sistema encontrar informação rapidamente;
@@ -204,4 +208,7 @@ Proporcionou o fundamento para as avaliações atuais de sistemas de informaçã
 - `Precision`: Número de documentos relevantes retirados / Número total de documentos retirados;
 - `Recall`: Número de documentos relevantes retirados / Número de documentos relevantes do sistema;
 - `Accuracy`: true (positives | negatives) / total;
+- `F Measure`: calculado com base em valores de recall e de precision;
+
+### Ranked
 
