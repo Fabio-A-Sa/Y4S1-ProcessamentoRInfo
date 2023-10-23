@@ -220,5 +220,17 @@ Para cada subconjunto de documentos rankeados retornados, e para cada sequência
 
 No caso da WEB, a maioria dos utilizadores não precisa de grande recall, ou seja, não interessa a percentagem de resultados relevantes dado todos os documentos importantes, mas sim a quantidade de documentos relevantes naquele conjunto retornado. Assim, a precisão toma uma importante função e é necessário escolher a quantidade K adequada para que a precisão seja máxima.
 
-#### Mean Average Precision (AvP)
+#### Mean Average Precision (MAP)
+
+É uma das mais comuns medidas usadas em IR. Trata-se da média de Average Precision dos vários conjuntos retornados, calculados para K documentos rankeados e úteis.
+
+![MAP](../Images/MAP.png)
+
+### Eficiência
+
+A eficiência pode ser medida através de:
+
+- Tempo de indexação;
+- Latência de pesquisas;
+- Tamanho do índex criado;
 
