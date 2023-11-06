@@ -269,4 +269,8 @@ O próximo passo da evolução do sistema é não considerar apenas a presença 
 
 ### TF-IDF
 
-Resulta da multiplicação de TF (a frequência de um dado termo num documento) com IDF (o inverso da)
+Resulta da multiplicação de TF (a frequência de um dado termo num documento) com IDF (o inverso da frequência desse termo nos documentos em geral). Assim é de prever que:
+- o valor será grande para um termo T que apareça muitas vezes num documento e num pequeno número de documentos;
+- o valor será pequeno para um termo T que apareça poucas vezes num documento ou que apareça em muitos documentos;
+- praticamente nulo se o termo T aparecer em todos os documentos;
+
