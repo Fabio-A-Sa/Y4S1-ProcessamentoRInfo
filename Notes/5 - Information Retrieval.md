@@ -288,3 +288,8 @@ As queries também são representadas num espaço de dimensão N, onde N é o n�
 
 ### Language Models
 
+Um documento é acertado para uma dada query se o Document Model for capaz de gerar essa query. Para uma dada query, os documentos são ordenados por relevância baseado na probabilidade do documento gerá-la, P(q | Md).
+- A soma das probabilidades de uma sequência de termos é 1
+- Se considerarmos os termos independentes (`unigram`), a probabilidade de uma sequência de termos é a multiplicação da probabilidade do aparecimento de cada termo;
+- Se considerarmos `bigrams`, aí a probabilidade será computada aos pares;
+
