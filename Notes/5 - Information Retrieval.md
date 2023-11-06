@@ -246,6 +246,16 @@ Uma matriz de incidência é simplesmente um modo de representação que indica 
 ### Inverted Index
 
 Cada palavra é ligada a uma lista de listas, cada uma podendo conter até 3 argumentos:
-- A: O index do documento onde a palavra está presente;
-- B: A quantidade de vezes onde essa palavra está presente naquele documento;
-- C: Os indexes, naquele documento, da posição de cada match encontrado;
+- `A`: O index do documento onde a palavra está presente;
+- `B`: A quantidade de vezes onde essa palavra está presente naquele documento;
+- `C`: Os indexes, naquele documento, da posição de cada match encontrado;
+
+### Parametric and Zone indexes
+
+Há documentos constituídos por mais parâmetros (como data, autores, título) e por isso houve necessidade de criar:
+- `parametric indexes`: inverted indexes criados por cada parâmetro. assim conseguimos obter queries mais complexas, como por exemplo "todos os documentos do autor Z que contêm a palavra Y";
+- `zone indexes`: é o mesmo conceito, mas aplicado a uma porção arbitrária do documento, como por exemplo ao abstract ou à conclusão de um paper;
+
+### Ranking Retrieval
+
+Num sistema grande o modelo booleano não é a melhor opção e houve necessidade de ordenar os documentos por ordem de relevância. p18 -> inf
