@@ -291,5 +291,12 @@ As queries também são representadas num espaço de dimensão N, onde N é o n�
 Um documento é acertado para uma dada query se o Document Model for capaz de gerar essa query. Para uma dada query, os documentos são ordenados por relevância baseado na probabilidade do documento gerá-la, P(q | Md).
 - A soma das probabilidades de uma sequência de termos é 1
 - Se considerarmos os termos independentes (`unigram`), a probabilidade de uma sequência de termos é a multiplicação da probabilidade do aparecimento de cada termo;
-- Se considerarmos `bigrams`, aí a probabilidade será computada aos pares;
+- Se considerarmos `bigrams`, aí a probabilidade será computada aos pares, a cada termo associa-se a probabilidade do seu anterior;
 
+Assim, podem ser usadas para reconhecer línguas, correções de escrita e traduções. Exemplo:
+
+> D1: Portugal eyes political balance in presidential election <br>
+> D2: After Portuguese elections, Spain braces for elections <br>
+> Q: Portugal Election <br>
+> P(Q|D1) = P(portugal|Md1) x P(election|Md1) = 1/7 x 1/7 = 0.0204 <br>
+> P(Q|D2) = P(portugal|Md2) x P(election|Md2) = 1/7 x 2/7 = 0.0408 <br>
