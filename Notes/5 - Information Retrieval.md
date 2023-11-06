@@ -258,4 +258,10 @@ Há documentos constituídos por mais parâmetros (como data, autores, título) 
 
 ### Ranking Retrieval
 
-Num sistema grande o modelo booleano não é a melhor opção e houve necessidade de ordenar os documentos por ordem de relevância. p18 -> inf
+Num sistema grande o modelo booleano não é a melhor opção e houve necessidade de ordenar os documentos por ordem de relevância. Essa relevância pode, por exemplo, ser o resultado da média ponderada de matches em cada zona ou field.
+
+#### Term Frequency (TF)
+
+
+
+#### Document Frequency (DF)
