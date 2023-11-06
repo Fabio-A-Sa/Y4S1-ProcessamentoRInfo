@@ -274,3 +274,10 @@ Resulta da multiplicação de TF (a frequência de um dado termo num documento) 
 - o valor será pequeno para um termo T que apareça poucas vezes num documento ou que apareça em muitos documentos;
 - praticamente nulo se o termo T aparecer em todos os documentos;
 
+## IR Models
+
+Os modelos têm o objectivo de produzir uma **função de ranking**, ou seja, dar score a cada documento dado uma query. Assim, é necessário:
+- Representar os documentos, Di;
+- Representar as queries, Qi;
+- Representar a função de ranking, R(Di, Qi);
+
