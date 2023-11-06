@@ -245,3 +245,7 @@ Uma matriz de incidência é simplesmente um modo de representação que indica 
 
 ### Inverted Index
 
+Cada palavra é ligada a uma lista de listas, cada uma podendo conter até 3 argumentos:
+- A: O index do documento onde a palavra está presente;
+- B: A quantidade de vezes onde essa palavra está presente naquele documento;
+- C: Os indexes, naquele documento, da posição de cada match encontrado;
