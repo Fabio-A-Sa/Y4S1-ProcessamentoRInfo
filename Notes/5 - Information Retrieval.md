@@ -281,3 +281,10 @@ Os modelos têm o objectivo de produzir uma **função de ranking**, ou seja, da
 - Representar as queries, Qi;
 - Representar a função de ranking, R(Di, Qi);
 
+### Vector Space Model
+
+É uma representação de um conjunto de documentos, onde cada eixo é na realidade um termo. A similiaridade entre dois documentos é baseada no cosseno do ângulo formado entre os dois vetores, desta forma compensando os efeitos do comprimento do documento. <br>
+As queries também são representadas num espaço de dimensão N, onde N é o número de termos na query. Assim, as queries são vistas como pequenos documentos. O resultado das queries são os X documentos mais próximos segundo a similiaridade do cosseno entre os respectivos vectores. 
+
+### Language Models
+
