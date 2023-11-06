@@ -234,3 +234,5 @@ A eficiência pode ser medida através de:
 - Latência de pesquisas;
 - Tamanho do índex criado;
 
+## IR Overview
+
