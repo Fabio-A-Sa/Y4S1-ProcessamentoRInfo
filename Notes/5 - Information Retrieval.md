@@ -236,3 +236,12 @@ A eficiência pode ser medida através de:
 
 ## IR Overview
 
+### Boolean Model
+
+Uma matriz de incidência é simplesmente um modo de representação que indica se o termo da linha X está presente no documento da coluna Y. Este `Boolean Retrieval Model`:
+- vê documentos como um conjunto de palavras;
+- tem a facilidade de poder fazer operações bitwise;
+- pode ser considerado um BOW (*Bag of Words*);
+
+### Inverted Index
+
