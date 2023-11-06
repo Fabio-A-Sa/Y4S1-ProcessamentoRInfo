@@ -241,7 +241,7 @@ A eficiência pode ser medida através de:
 Uma matriz de incidência é simplesmente um modo de representação que indica se o termo da linha X está presente no documento da coluna Y. Este `Boolean Retrieval Model`:
 - vê documentos como um conjunto de palavras;
 - tem a facilidade de poder fazer operações bitwise;
-- pode ser considerado um BOW (*Bag of Words*);
+- pode ser considerado um BOW (*Bag of Words*) se for considerado também o número de ocorrências;
 
 ### Inverted Index
 
@@ -256,12 +256,17 @@ Há documentos constituídos por mais parâmetros (como data, autores, título) 
 - `parametric indexes`: inverted indexes criados por cada parâmetro. assim conseguimos obter queries mais complexas, como por exemplo "todos os documentos do autor Z que contêm a palavra Y";
 - `zone indexes`: é o mesmo conceito, mas aplicado a uma porção arbitrária do documento, como por exemplo ao abstract ou à conclusão de um paper;
 
-### Ranking Retrieval
+## Ranking Retrieval
 
-Num sistema grande o modelo booleano não é a melhor opção e houve necessidade de ordenar os documentos por ordem de relevância. Essa relevância pode, por exemplo, ser o resultado da média ponderada de matches em cada zona ou field.
+Num sistema grande o modelo booleano não é a melhor opção e houve necessidade de ordenar os documentos por ordem de relevância. Essa relevância pode, por exemplo, ser o resultado da média ponderada de matches em cada zona ou field. <br> 
+O próximo passo da evolução do sistema é não considerar apenas a presença do token mas sim a sua frequência:
 
-#### Term Frequency (TF)
+- `Term Frequency` (TF) - analisa a frequência num determinado documento. Só isto não é suficiente pois, por exemplo, num conjunto de documentos que são dissertações, a palavra "dissertação" não vai ter relevância para a pesquisa mas vai aparecer muitas vezes;
 
+- `Document Frequency` (DF) - o número de documentos que contêm o termo;
 
+- `Inverse Document Frequency` (IDF) - calculado com log(N / document frequency), sendo N o número total de documentos. Assim, quanto mais raro é o termo nos documentos em geral, maior será este índice;
 
-#### Document Frequency (DF)
+### TF-IDF
+
+Resulta da multiplicação de TF (a frequência de um dado termo num documento) com IDF (o inverso da)
