@@ -379,3 +379,11 @@ Conhecido como Hyperlink Induced Topic Search, que é um algoritmo `query depend
 - páginas que têm várias a apontar para elas são `authorities`;
 - páginas que apontam para várias outras são `hubs`;
 
+## Leaning to Rank
+
+Através de Machine Learning. O traning set consiste num conjunto de queries, o conjunto de documentos e os julgamentos de relevância. A modelação dos processos podem ser feita através de:
+
+- `Pointwise approach`, encontra a relevância de cada documento, tratando o problema como se fosse de regressão;
+- `Pairwise approach`, encontra a relevância entre dois documentos, tratando o problema como se fosse de classificação;
+- `Listwise approach`, encontra uma lista de relevâncias de documentos para cada query. É o contém melhor performance e mais próximo dos métodos tradicionais de Information Retrieval;
+
