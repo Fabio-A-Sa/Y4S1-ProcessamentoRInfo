@@ -366,3 +366,15 @@ As características de cada signal vão impactar a sua computação. Essa comput
 
 #### Linked-based signals
 
+Assume-se que quanto mais hyperlinks apontam para uma página, mais popular esta é. Existem dois tipos de algoritmos:
+
+#### 1. `PageRank`:
+
+O PageRank de um nó do grafo da WEB é um valor entre 0 e 1. É a probabilidades de, num surf aleatório e infinito, o crawler passar por aquele nó.
+
+##### 2. `HITS`:
+
+Conhecido como Hyperlink Induced Topic Search, que é um algoritmo `query dependent`. Começa com um conjunto de respostas (ou seja, páginas que contém keywords), e computa dois scores por página:
+
+- 
+- 
