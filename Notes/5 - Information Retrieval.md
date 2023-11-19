@@ -338,9 +338,9 @@ Podem ser agrupadas em três partes principais:
 
 #### Robots Exclusion Protocol
 
-`Server-wide exclusion`: indica os diretórios que não devem ser explorados;
-`Page-wise exclusions`: através de meta-tags no HTML, como noindex, nofollow;
-`Cache exclusions`: para não mostrarem ao utilizador uma cópia da cache local da página;
+- `Server-wide exclusion`: indica os diretórios que não devem ser explorados;
+- `Page-wise exclusions`: através de meta-tags no HTML, como noindex, nofollow;
+- `Cache exclusions`: para não mostrarem ao utilizador uma cópia da cache local da página;
 
 #### Run
 
@@ -349,3 +349,8 @@ Podem ser agrupadas em três partes principais:
 
 ### Web Ranking
 
+É a parte mais complexa e importante de uma search engine. Além de avaliar a relevância dos documentos, há que identificar a qualidade dos conteúdos e coletá-los, assim como evitar spam. Para isso há `Ranking Signals` de três tipos principais:
+
+-
+-
+-
