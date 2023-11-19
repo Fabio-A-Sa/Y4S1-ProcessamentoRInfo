@@ -351,6 +351,6 @@ Podem ser agrupadas em três partes principais:
 
 É a parte mais complexa e importante de uma search engine. Além de avaliar a relevância dos documentos, há que identificar a qualidade dos conteúdos e coletá-los, assim como evitar spam. Para isso há `Ranking Signals` de três tipos principais:
 
--
--
--
+- `Content signals`: relacionado ao texto e considera a semântica HTML (headings, sections, likes);
+- `Structural signals`: relacionado à estrutura de links da web, pode ser textual (anchor text) ou relacionado aos links (números);
+- `Usage signals`: relacionado ao feedback dado pelos utilizadores, como clicks, localização geográfica, stack de tecnologia, tempo... ;
