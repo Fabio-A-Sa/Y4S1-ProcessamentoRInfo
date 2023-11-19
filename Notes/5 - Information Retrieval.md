@@ -376,5 +376,6 @@ O PageRank de um nó do grafo da WEB é um valor entre 0 e 1. É a probabilidade
 
 Conhecido como Hyperlink Induced Topic Search, que é um algoritmo `query dependent`. Começa com um conjunto de respostas (ou seja, páginas que contém keywords), e computa dois scores por página:
 
-- 
-- 
+- páginas que têm várias a apontar para elas são `authorities`;
+- páginas que apontam para várias outras são `hubs`;
+
