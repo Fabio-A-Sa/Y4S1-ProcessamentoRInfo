@@ -354,3 +354,15 @@ Podem ser agrupadas em três partes principais:
 - `Content signals`: relacionado ao texto e considera a semântica HTML (headings, sections, likes);
 - `Structural signals`: relacionado à estrutura de links da web, pode ser textual (anchor text) ou relacionado aos links (números);
 - `Usage signals`: relacionado ao feedback dado pelos utilizadores, como clicks, localização geográfica, stack de tecnologia, tempo... ;
+
+Os `Ranking Signals` também podem ser distinguidos de acordo com outras dimensões:
+
+- `User dependent`: dependem das características do utilizador;
+- `Query dependent`: dependem das queries usadas;
+- `Document dependent`: dependem de um único documento;
+- `Collection dependent`: dependem da informação da coleção completa;
+
+As características de cada signal vão impactar a sua computação. Essa computação muitas vezes é feita com Machine Learning, para medir os pesos de cada um dos componentes. 
+
+#### Linked-based signals
+
