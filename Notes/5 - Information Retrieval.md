@@ -389,3 +389,9 @@ Através de Machine Learning. O traning set consiste num conjunto de queries, o 
 
 ## Neural Information Retrieval
 
+`BERT`, ou Bidirectional Encoder Representations from Transformers, são modelos de linguagem pré-treinados construídos num *transformer architecture*. As Neural Networks são usadas de dois modos distintos:
+
+- A construir ranking functions usando relevance signals;
+- A aprender representações abstratas de documentos e queries para capturar a sua relevância;
+
+Neste caso, o processo de ranking envolve um par query-documento e um estágio onde o martch/relevância é calculado para ambos. 
