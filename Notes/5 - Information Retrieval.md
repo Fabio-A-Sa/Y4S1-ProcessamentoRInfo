@@ -324,3 +324,13 @@ Podem ser agrupadas em três partes principais:
 - `Navigational queries`: procurar a home page de uma entidade singular, as expectativas dos utilizadores são encontrar um recurso específico;
 - `Transactional queries`: como comprar um produto, download de um ficheiro, fazer uma reserva num hotel;
 
+### Web Crawling
+
+É o processo pelo qual as páginas web são coletadas da internet, tendo como objectivo encontrar de forma simples e rápida a maior quantidade de páginas web. Um crawler tem de providenciar robustez ao encontrar problemas, como conteúdo não esperado. Também deve executar numa perspectiva escalável e eficiente, encontrando páginas de qualidade e cujo reload depende da frequência de atualização da página. 
+
+`Politeness`
+
+- Deve utilizar os recursos disponíveis para obter a coleção de dados;
+- Não pode fazer overload de pedidos HTTP, ou seja, o crawler deve esperar um delay entre duas requests sucessivas. Caso não o faça pode ser banido segundo as políticas dos hosting providers;
+- Deve obedecer ao protocolo de exclusão de robots (*robots.txt*);
+- 
