@@ -316,3 +316,11 @@ As search engines devem ser resistentes a alta manipulação, para que não colo
 
 - `Cloaking / Camuflagem`: se a searching engine é `crawler`, então apresenta um conteúdo qualquer, senão apresenta SPAM;
 
+### User information needs
+
+Podem ser agrupadas em três partes principais:
+
+- `Information queries`: informação geral sobre um tópico, não há apenas um sítio único de fonte relevante de informação, pelo que os utilizadores aglutinam informações de vários sites;
+- `Navigational queries`: procurar a home page de uma entidade singular, as expectativas dos utilizadores são encontrar um recurso específico;
+- `Transactional queries`: como comprar um produto, download de um ficheiro, fazer uma reserva num hotel;
+
