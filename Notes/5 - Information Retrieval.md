@@ -277,6 +277,7 @@ Resulta da multiplicação de TF (a frequência de um dado termo num documento) 
 ## IR Models
 
 Os modelos têm o objectivo de produzir uma **função de ranking**, ou seja, dar score a cada documento dado uma query. Assim, é necessário:
+
 - Representar os documentos, Di;
 - Representar as queries, Qi;
 - Representar a função de ranking, R(Di, Qi);
@@ -289,6 +290,7 @@ As queries também são representadas num espaço de dimensão N, onde N é o n�
 ### Language Models
 
 Um documento é acertado para uma dada query se o Document Model for capaz de gerar essa query. Para uma dada query, os documentos são ordenados por relevância baseado na probabilidade do documento gerá-la, P(q | Md).
+
 - A soma das probabilidades de uma sequência de termos é 1
 - Se considerarmos os termos independentes (`unigram`), a probabilidade de uma sequência de termos é a multiplicação da probabilidade do aparecimento de cada termo;
 - Se considerarmos `bigrams`, aí a probabilidade será computada aos pares, a cada termo associa-se a probabilidade do seu anterior;
@@ -328,9 +330,22 @@ Podem ser agrupadas em três partes principais:
 
 É o processo pelo qual as páginas web são coletadas da internet, tendo como objectivo encontrar de forma simples e rápida a maior quantidade de páginas web. Um crawler tem de providenciar robustez ao encontrar problemas, como conteúdo não esperado. Também deve executar numa perspectiva escalável e eficiente, encontrando páginas de qualidade e cujo reload depende da frequência de atualização da página. 
 
-`Politeness`
+#### Politeness
 
 - Deve utilizar os recursos disponíveis para obter a coleção de dados;
 - Não pode fazer overload de pedidos HTTP, ou seja, o crawler deve esperar um delay entre duas requests sucessivas. Caso não o faça pode ser banido segundo as políticas dos hosting providers;
 - Deve obedecer ao protocolo de exclusão de robots (*robots.txt*);
-- 
+
+#### Robots Exclusion Protocol
+
+`Server-wide exclusion`: indica os diretórios que não devem ser explorados;
+`Page-wise exclusions`: através de meta-tags no HTML, como noindex, nofollow;
+`Cache exclusions`: para não mostrarem ao utilizador uma cópia da cache local da página;
+
+#### Run
+
+- O Crawler começa com um conjunto de `seed pages`, e estas apontam para vários outros documentos/páginas. O crawler acaba quando o critério de paragem é atingido ou quando quando o update/refresh policy foi atingido.
+- A duplicação de páginas ou partes de páginas podem ser evitadas comparando partes de documentos;
+
+### Web Ranking
+
