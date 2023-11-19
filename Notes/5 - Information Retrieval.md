@@ -387,3 +387,5 @@ Através de Machine Learning. O traning set consiste num conjunto de queries, o 
 - `Pairwise approach`, encontra a relevância entre dois documentos, tratando o problema como se fosse de classificação;
 - `Listwise approach`, encontra uma lista de relevâncias de documentos para cada query. É o contém melhor performance e mais próximo dos métodos tradicionais de Information Retrieval;
 
+## Neural Information Retrieval
+
