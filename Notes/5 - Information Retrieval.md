@@ -312,3 +312,10 @@ A Web pode ser modelada em termos de um grafo, onde páginas apontam para outras
 
 ### Web Spam
 
+As search engines devem ser resistentes a alta manipulação, para que não coloquem spam como documentos rankeados no topo das pesquisas. Há várias maneira de tentar manipular os rankings:
+
+#### Cloaking
+
+
+
+#### Link Farms
