@@ -300,3 +300,15 @@ Assim, podem ser usadas para reconhecer línguas, correções de escrita e tradu
 > Q: Portugal Election <br>
 > P(Q|D1) = P(portugal|Md1) x P(election|Md1) = 1/7 x 1/7 = 0.0204 <br>
 > P(Q|D2) = P(portugal|Md2) x P(election|Md2) = 1/7 x 2/7 = 0.0408 <br>
+
+## Information Retrieval in Web
+
+A Web lança desafios em termos de distribuição (pois não é centralizada), tamanho e qualidade dos dados, assim como a diversidade das necessidades e a sua relevância. Assim, os métodos de acesso a esta informação foi classificados em dois grupos:
+
+- `Full-text index search engines`: usam keys e inverted indexes para o ranking dos documentos;
+- `Directories/Taxonomies`: navegam a partir de uma hierarquia estabelecida, através de uma categorização manual, que não é escaláve, tem um alto custo e é sensível a ambiguidades;
+
+A Web pode ser modelada em termos de um grafo, onde páginas apontam para outras páginas. Há links para outras páginas (out-links, anchor texts) e links para recursos dentro da mesma página (in-links, o `in-degree`).
+
+### Web Spam
+
