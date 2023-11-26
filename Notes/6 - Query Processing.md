@@ -12,4 +12,12 @@ Existem otimizações possíveis nestes processos, pois as funções de score s�
 
 ## Otimizações
 
-- Skip Pointers: 
+### Skip Pointers
+
+Usados para aumentar a rapidez do scan de `inverted indexes`.
+
+### Conjunctive Processing
+
+Apenas retorna documentos que contêm todos os termos da query. Este é o default das search engines e o default das expectativas dos utilizadores comuns. Este processo resulta melhor quando um dos termos da query é raro, ou seja, a maior parte da lista invertida dos outros termos pode ser avançada.
+
+Pode ser 
