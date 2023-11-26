@@ -20,4 +20,12 @@ Usados para aumentar a rapidez do scan de `inverted indexes`.
 
 Apenas retorna documentos que contêm todos os termos da query. Este é o default das search engines e o default das expectativas dos utilizadores comuns. Este processo resulta melhor quando um dos termos da query é raro, ou seja, a maior parte da lista invertida dos outros termos pode ser avançada.
 
-Pode ser 
+- Pode ser implementada com processos document-at-a-time e term-at-a-time;
+- Em pequenas queries, há melhoramento em termos de eficiência e eficácia;
+- Grandes queries não são boas candidatas porque a probabilidade de termos vários documentos com todos os termos diminui;
+
+### Outras
+
+- Ignorar as palavras com maior frequência nas listas no term-at-a-time;
+- Ignorar os documentos no final da lista no document-at-a-time, quando os documentos começam a ser ordenados;
+- 
