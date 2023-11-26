@@ -55,9 +55,9 @@ Através de `query expansion` o utilizador opta por dar queries ou termos altern
 
 ## Search User Experience
 
-- 
-- 
-- 
-- 
-- 
-
+- Suporte para linguagem natural;
+- Auto-complete;
+- Clustering results;
+- Suporte a site search;
+- Suporte a contextual snippets;
+- Infoboxes;
