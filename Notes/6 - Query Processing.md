@@ -53,4 +53,11 @@ Há hipótese de fazer um `pseudo relevance feedback`, ou seja, sem interação 
 
 Através de `query expansion` o utilizador opta por dar queries ou termos alternativos, como sinónimos. 
 
-## Search
+## Search User Experience
+
+- 
+- 
+- 
+- 
+- 
+
