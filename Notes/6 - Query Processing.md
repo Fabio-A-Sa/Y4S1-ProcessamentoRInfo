@@ -28,4 +28,9 @@ Apenas retorna documentos que contêm todos os termos da query. Este é o defaul
 
 - Ignorar as palavras com maior frequência nas listas no term-at-a-time;
 - Ignorar os documentos no final da lista no document-at-a-time, quando os documentos começam a ser ordenados;
-- 
+- Cache dos resultados das queries mais populares e comuns;
+
+# Relevance Feedback and Query Expansion
+
+## Relevance Feedback
+
