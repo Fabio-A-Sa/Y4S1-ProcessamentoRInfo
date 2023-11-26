@@ -34,3 +34,9 @@ Apenas retorna documentos que contêm todos os termos da query. Este é o defaul
 
 ## Relevance Feedback
 
+Exact match não é a única forma de obter resultados relevantes em search systems, porque existem sinónimos, imagens, e outras características da linguagem natural.
+
+Nesse caso, o sistema pode retornar um conjunto inicial de resultados, pedir feedback ao utilizador e depois sim refinar o seguinte conjunto. Pode ajudar também o utilizador a refinar a sua query para aquela determinada search engine.
+
+### Rocchio Algorithm
+
