@@ -40,3 +40,13 @@ Nesse caso, o sistema pode retornar um conjunto inicial de resultados, pedir fee
 
 ### Rocchio Algorithm
 
+Maximiza a diferença entre vectores que representam documentos relevantes e documentos não relevantes. Considerando a informação relevante, este algoritmo define uma query modificada, pesada e combinada entre a query inicial e o centroide dos documentos marcados como relevantes pelo utilizador.
+
+- Pode aumentar a precisão e o recall;
+- É mais útil para aumentar o recall, pois é um comportamento global;
+- O feedback positivo é mais importante que o negativo para afinar a query;
+
+No entanto também há algumas limitações:
+
+- Não aceita erros de escrita, documentos noutra lingua;
+- Os utilizadores podem estar relutantes em 
