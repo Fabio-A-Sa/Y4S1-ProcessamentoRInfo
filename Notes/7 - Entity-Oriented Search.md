@@ -26,3 +26,5 @@ Os dados podem ser agrupados em três fases:
 - `Semi-structured data`: não tem uma estrutura rígida, mas existem tags ou alguma marca para separar elementos textuais de elementos semânticos, tal como acontece no HTML;
 - `Structured data`: com um schema fixo e tabular, como nas bases de dados relacionais. O schema define como os dados são organizados e as duas restrições para manter a coerência e consistência.
 
+## Data Sources
+
