@@ -30,4 +30,15 @@ Os dados podem ser agrupados em três fases:
 
 Cria-se um documento com toda a informação relevante daquela entidade e assim pode ser indexada e rankeada de acordo com os outros tipos de algoritmos já conhecidos.
 
-### Entity 
+### Entity Components
+
+- `Entity length`: número de termos na descrição da entidade;
+- `Term frequency` (TF): normalização do termo na descrição da entidade;
+- `Entity frequency` (EF): número de entidades em que cada termo ocorre;
+- `Inverse entity frequency` (IEF): o log do rácio entre o número total das entidades no catálogo e a frequência das entidades;
+
+### Entity Representations
+
+Para os dados não estruturados, os documentos são anotados com as entidades que são apresentados neles e usam-se documentos a servir de proxy para conectar entidades a termos.
+
+Para dados semi-estruturados, 
