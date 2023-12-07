@@ -45,3 +45,10 @@ Cria-se um documento com toda a informação relevante daquela entidade e assim 
 
 - Para dados **estruturados**, os atributos da entidade já estão bem definidos, cada um com uma URI (*Uniform Resource Identifier*) única.
 
+### Entity Linking
+
+Com três etapas principais:
+
+- Mention detection;
+- Candidate selection;
+- Disambiguation;
