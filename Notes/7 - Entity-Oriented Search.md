@@ -10,7 +10,7 @@ São usadas bases de conhecimento (*Knowledge Base*, KB), com factos acerca de e
 - `Attributes`: caracterizam as features de cada entidade e têm sempre valores literais;
 - `Relationships`: descreve como as entidades são associadas a outras, podem ser vistas como tipos de linkagem entre entidades;
 
-`Resource Description Framework` (RDF) é o standard para descrever estas entidades. As entidades podem ser vistas como nós num grafo, com as relações a serem arestas.
+`Resource Description Framework` (RDF) é a linguagem standard para descrever estas entidades. As entidades podem ser vistas como nós num grafo, com as relações a serem arestas.
 
 Os utilizadores articulam as suas necessidades de informação através de cinco tipos diferentes:
 
@@ -26,5 +26,8 @@ Os dados podem ser agrupados em três fases:
 - `Semi-structured data`: não tem uma estrutura rígida, mas existem tags ou alguma marca para separar elementos textuais de elementos semânticos, tal como acontece no HTML;
 - `Structured data`: com um schema fixo e tabular, como nas bases de dados relacionais. O schema define como os dados são organizados e as duas restrições para manter a coerência e consistência.
 
-## Data Sources
+## Entity Ranking
 
+Cria-se um documento com toda a informação relevante daquela entidade e assim pode ser indexada e rankeada de acordo com os outros tipos de algoritmos já conhecidos.
+
+### Entity 
