@@ -39,6 +39,9 @@ Cria-se um documento com toda a informação relevante daquela entidade e assim 
 
 ### Entity Representations
 
-Para os dados não estruturados, os documentos são anotados com as entidades que são apresentados neles e usam-se documentos a servir de proxy para conectar entidades a termos.
+- Para os **dados não estruturados**, os documentos são anotados com as entidades que são apresentados neles e usam-se documentos a servir de proxy para conectar entidades a termos.
 
-Para dados semi-estruturados, 
+- Para dados **semi-estruturados**, os atributos da entidade correspondem às secções criadas, como título, sumário, introdução.
+
+- Para dados **estruturados**, os atributos da entidade já estão bem definidos, cada um com uma URI (*Uniform Resource Identifier*) única.
+
