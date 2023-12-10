@@ -21,11 +21,11 @@ Pode ser dividida em três abordagens principais:
 
 #### IR Style
 
-
+Baseado em tarefas específicas e datasets previamente conhecidos. No entanto métricas muito simples, como precisão e recall, não são suficientes.
 
 #### Empirical User Studies
 
-
+Permite aos utilizadores recriarem uma tarefa no sistema apropriadas a pesquisa. São recolhidas métricas como o número de cliques, o tempo dispendido, e também algumas métricas mais qualitativas.
 
 #### Analytics approaches
 
