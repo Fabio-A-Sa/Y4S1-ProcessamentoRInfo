@@ -14,7 +14,18 @@ Mais recentemente apareceram algumas abordagens:
 - Browsing;
 - Form filling;
 - Boolean searching;
-- 
 
 ## Evaluating
+
+Pode ser dividida em três abordagens principais:
+
+#### IR Style
+
+
+
+#### Empirical User Studies
+
+
+
+#### Analytics approaches
 
