@@ -17,7 +17,7 @@ Mais recentemente apareceram algumas abordagens:
 
 ## Evaluating
 
-Pode ser dividida em três abordagens principais:
+A escolha do método de avaliação recai sob o processo DECIDE e pode ser dividida em três abordagens principais:
 
 #### IR Style
 
@@ -29,3 +29,4 @@ Permite aos utilizadores recriarem uma tarefa no sistema apropriadas a pesquisa.
 
 #### Analytics approaches
 
+É low-cost, como heuristic evaluation, só permitem estimar e não precisar.
