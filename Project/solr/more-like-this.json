@@ -1,0 +1,9 @@
+{
+    "add-requesthandler": {
+      "name": "/mlt",
+      "class": "solr.MoreLikeThisHandler",
+      "defaults": {
+        "mlt.fl": "text"
+      }
+    }
+}

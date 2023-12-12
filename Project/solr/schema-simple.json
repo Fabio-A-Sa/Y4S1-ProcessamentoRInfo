@@ -1,0 +1,18 @@
+{
+	"add-field-type": [
+    ],
+    "add-field": [
+        {
+            "name": "date",
+            "type": "string"
+        },
+        {
+            "name": "rate",
+            "type": "pdoubles"
+        },
+        {
+            "name": "text",
+            "type": "text_general"
+        }
+    ]
+}

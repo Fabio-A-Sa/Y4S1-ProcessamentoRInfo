@@ -1,0 +1,77 @@
+{
+	"add-field-type": [
+        {
+            "name":"boosted_text",
+            "class":"solr.TextField",
+            "indexAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class":"solr.SynonymGraphFilterFactory", "synonyms":"synonyms_reviews.txt", "ignoreCase":"true", "expand":"false"},
+                    {"class":"solr.StopFilterFactory", "words":"stopwords.txt"},
+                    {"class":"solr.EnglishMinimalStemFilterFactory"}
+                ]
+            },
+            "queryAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class":"solr.SynonymGraphFilterFactory", "synonyms":"synonyms_reviews.txt", "ignoreCase":"true", "expand":"false"},
+                    {"class":"solr.StopFilterFactory", "words":"stopwords.txt"},
+                    {"class":"solr.EnglishMinimalStemFilterFactory"}
+                ]
+            }
+        }
+    ],
+    "add-field": [
+        {
+            "name": "name",
+            "type": "boosted_text",
+            "indexed": true,
+            "stored": true
+        },
+        {
+            "name": "location",
+            "type": "boosted_text",
+            "indexed": true,
+            "stored": true
+        },
+        {
+            "name": "average_rate",
+            "type": "pdoubles",
+            "indexed": true,
+            "stored": true
+        },
+        {
+			"name": "reviews",
+			"type": "boosted_text",
+			"indexed": true,
+			"stored": true,
+			"multiValued": true
+		},
+        {
+            "name": "date",
+            "type": "string",
+            "indexed": false,
+            "stored": true
+        },
+        {
+            "name": "rate",
+            "type": "pdoubles",
+            "indexed": false,
+            "stored": true
+        },
+        {
+            "name": "text",
+            "type": "boosted_text",
+            "indexed": true,
+            "stored": true
+        }
+    ]
+}
