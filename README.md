@@ -17,9 +17,9 @@ This repository contains all the exercises and assessments of the UC Redes de Co
 
 Notes that I take during theoretical lectures in Markdown <br>
 
-### Hotel? PRIvago (Grade: __/20)
+### Hotel? Privago (Grade: __/20)
 
-PRI Project. Soon
+
 
 **@ Fábio Araújo de Sá** <br>
 **2023/2024**
