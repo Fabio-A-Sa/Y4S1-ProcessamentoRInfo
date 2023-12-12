@@ -1,0 +1,92 @@
+<main>
+    <section class="search">
+        <div class="search-container">
+            <input
+                type="text"
+                name="searchInput"
+                placeholder="Search..."
+                id="searchInput"
+            />
+            <button type="submit" id="searchButton" onclick="search()">
+                Search
+            </button>
+        </div>
+
+        <div class="filters-container">
+            <div class="min-max-slider" id="reviewRate">
+                <div class="price-content">
+                    <p>0</p>
+                    <span>Review rate:</span>
+                    <p>5</p>
+                </div>
+                <div class="slider">
+                    <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                    <input
+                        id="rrmin"
+                        type="range"
+                        class="range-min"
+                        min="0"
+                        max="5"
+                        value="0"
+                        step="1"
+                    />
+                    <input
+                        id="rrmax"
+                        type="range"
+                        class="range-max"
+                        min="0"
+                        max="5"
+                        value="5"
+                        step="1"
+                    />
+                </div>
+            </div>
+
+            <div class="min-max-slider" id="hotelRate">
+                <div class="price-content">
+                    <p>0</p>
+                    <span>Hotel average rate:</span>
+                    <p>5</p>
+                </div>
+                <div class="slider">
+                    <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                    <input
+                        id="hrmin"
+                        type="range"
+                        class="range-min"
+                        min="0"
+                        max="5"
+                        value="0"
+                        step="1"
+                    />
+                    <input
+                        id="hrmax"
+                        type="range"
+                        class="range-max"
+                        min="0"
+                        max="5"
+                        value="5"
+                        step="1"
+                    />
+                </div>
+            </div>
+            <label for="location"
+                >Location:
+
+                <locations></locations>
+            </label>
+        </div>
+    </section>
+
+    <h2 class="hotels-label">Explore our best hotels:</h2>
+    <section class="hotels">
+        <p>No hotels found</p>
+    </section>
+</main>
+
+<script src="../js/search.js"></script>
+<script src="../js/home.js"></script>

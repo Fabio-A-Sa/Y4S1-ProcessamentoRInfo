@@ -1,0 +1,418 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header section */
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Search section */
+
+.search-container {
+    display: flex;
+    width: 500px;
+}
+
+.search {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filters-container {
+    width: 500px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: end;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.filters-container > label {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.min-max-slider {
+    width: 160px;
+    margin-bottom: 8px;
+}
+
+.min-max-slider span {
+    font-size: small;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.price-content {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price-content p {
+    font-size: small;
+    margin: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.price-content div:nth-child(2) p {
+    text-align: end;
+}
+
+.slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.slider .progress {
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    border-radius: 5px;
+    background: #17a2b8;
+}
+
+.range-input {
+    position: relative;
+}
+.range-input input {
+    position: absolute;
+    width: 95%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.range-input input:nth-child(2) {
+    left: 5%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #17a2b8;
+    pointer-events: auto;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #17a2b8;
+    pointer-events: auto;
+    cursor: pointer;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 600px) {
+    .search-container {
+        width: 100%;
+    }
+    .filters-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .filters-container > * {
+        justify-self: center;
+    }
+    .filters-container > *:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (max-width: 600px) and (max-width: 400px) {
+    .search-container {
+        width: 100%;
+    }
+    .filters-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .filters-container > * {
+        justify-self: center;
+    }
+}
+
+/* Reviews section */
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.reviews h3 {
+    margin: 1rem auto 1rem 0;
+}
+
+.review {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+}
+
+.review h3 {
+    grid-column: span 2;
+    color: #333;
+    font-size: 1em;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.review h4 {
+    color: #555;
+    font-size: 0.9em;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    grid-column: span 2;
+}
+
+.review h4 b {
+    color: rgb(0, 0, 0);
+}
+
+.review h5 {
+    margin: 0;
+    color: #777;
+    font-size: 0.8em;
+}
+
+.review h6 {
+    margin: 0;
+    font-size: 0.8em;
+    justify-self: self-end;
+    padding: 0.4em 0.8em;
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.review h6 > a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    margin: 0.5em 4em;
+}
+
+@media only screen and (max-width: 600px) {
+    .reviews h3 {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Hotels section */
+
+.hotels-label {
+    width: auto;
+    max-width: 1490px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.hotels {
+    max-width: 1490px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px 20px;
+    margin: 0 auto;
+}
+
+.hotel {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 60px;
+}
+
+.hotel:hover {
+    cursor: pointer;
+}
+
+.hotel h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.hotel h4 {
+    color: #555;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.hotel a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+
+.hotelInfo,
+.moreInfo {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.hotelInfo {
+    flex: 0;
+    padding: 0;
+}
+
+.moreInfo {
+    padding: 1em;
+}
+
+.hotelInfo h1,
+.moreInfo h4 {
+    margin: 0;
+    padding: 2em 3em;
+}
+
+.hotelInfo p {
+    font-size: 1.1em;
+}
+
+.hotelInfo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+.hotelInfo a:hover {
+    text-decoration: underline;
+}
+
+.left {
+    margin-right: auto;
+    margin-left: 4em;
+}
+
+@media only screen and (max-width: 600px) {
+    .hotels-label {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) and (max-width: 400px) {
+    .hotels {
+        grid-template-columns: auto;
+    }
+}
+
+/* Footer section */
+
+footer {
+    width: 100vw;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+/* Simple container for horizontal alignment */
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container > * {
+    margin-right: 10px;
+}
