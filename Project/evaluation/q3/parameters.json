@@ -1,0 +1,27 @@
+{
+    "simple": {
+        "q": "good location ((elevator) OR (accessibility))",
+        "df": "text",
+        "indent": "true",
+        "fl": "*,[child]",
+        "q.op": "AND",
+        "fq": "{!child of=\"*:* -_nest_path_:*\"}location:\"united kingdom\"",
+        "sort": "score desc",
+        "rows": "20",
+        "useParams": ""
+    },
+    "boosted": {
+        "q": "good location ((elevator) OR (accessibility))",
+        "indent": "true",
+        "q.op": "AND",
+        "fq": "{!child of=\"*:* -_nest_path_:*\"}location:\"united kingdom\"",
+        "sort": "score desc",
+        "start": "0",
+        "rows": "20",
+        "fl": "*,[child]",
+        "defType": "edismax",
+        "qf":"text^7 name location^2",
+        "pf": "text^10",
+        "ps": "3"
+    }
+}
