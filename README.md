@@ -19,7 +19,16 @@ Notes that I take during theoretical lectures in Markdown <br>
 
 ### Hotel? Privago (Grade: __/20)
 
+![Privago logo](./Project/imgs/logo.png)
 
+The internet's exponential growth demands appropriate systems for harnessing and connecting this massive information resource. This project addresses this need by focusing on the hotel industry, where reviews play a crucial role in shaping consumer choices. This article aims to provide a clear and well-documented explanation of the work needed in developing a robust search engine for hotel reviews. To accomplish this, data is collected from multiple sources, cleaned and prepared, and in-depth data analysis is undertaken.
+
+### Members
+
+- André Ávila, up202006767@up.pt
+- André Costa, up201905916@up.pt
+- Fábio Morais, up202008052@up.pt
+- Fábio Sá, up202007658@up.pt
 
 **@ Fábio Araújo de Sá** <br>
 **2023/2024**
