@@ -1,0 +1,27 @@
+{
+    "simple": {
+        "q":"(good vegetarian) OR (good vegan)",
+        "indent":"true",
+        "q.op":"AND",
+        "fq":"{!child of=\"*:* -_nest_path_:*\"}location:*",
+        "sort":"score desc",
+        "start":"0",
+        "rows":"20",
+        "fl":"*, [child]",
+        "df": "text"
+    },
+    "boosted": {
+        "q":"(good vegetarian) OR (good vegan)",
+        "indent":"true",
+        "q.op":"AND",
+        "fq":"{!child of=\"*:* -_nest_path_:*\"}location:*",
+        "sort":"score desc",
+        "start":"0",
+        "rows":"20",
+        "fl":"*, [child]",
+        "defType":"edismax",
+        "qf":"text^7 name location^2",
+        "pf": "text^10",
+        "ps": 3
+      }
+}
