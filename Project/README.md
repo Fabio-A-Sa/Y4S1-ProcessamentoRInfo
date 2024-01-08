@@ -8,7 +8,7 @@
        />
 </p>
 
-<h3 align = "center" >PRI Project</h3>
+<h3 align = "center" >PRI Project - Grade: 18.8/20</h3>
 
 ### Run Web Interface
 

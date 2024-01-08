@@ -17,7 +17,7 @@ This repository contains all the exercises and assessments of the UC Redes de Co
 
 Notes that I take during theoretical lectures in Markdown <br>
 
-### Hotel? Privago (Grade: __/20)
+### Hotel? Privago (Grade: 18.8/20)
 
 ![Privago logo](./Project/imgs/logo.png)
 
