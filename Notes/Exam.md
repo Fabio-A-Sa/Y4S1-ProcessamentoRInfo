@@ -13,7 +13,8 @@
 
 ## 1 - Introduction
 
-
+- Information retrieval é diferente de data retrieval porque não se rege com base em exact matching e os resultados são ordenados por relevância;
+- Google search é um "ad hoc" search, busca independente para necessidade isolada. Depois também existem as searches: Vertical, Enterprise e Desktop;
 
 ## 2 - Data colection
 

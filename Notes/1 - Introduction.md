@@ -16,7 +16,7 @@ Como os dados são de diferentes proveniências, contém diversos formatos e atr
 
 ## Information Retrieval
 
-É mais da área de ciência de computadores e tem como base a informação realmente importante e relevante para o tópico sugerido. 
+É mais da área de ciência de computadores e tem como base a informação realmente importante e relevante para o tópico sugerido.
 
 ## Information Access
 
