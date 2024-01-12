@@ -18,7 +18,11 @@
 
 ## 2 - Data colection
 
-
+- Data (factos por observação direta), metadata e information (data processada, organizada e estruturada);
+- Life cycle: ocorrência, transmissão, processamento, manipulação, utilização;
+- Extract-transform-load, ETL mais antiga, ELT melhor porque permite trabalho paralelo, muito usado com dados column-oriented;
+- OSEMN: obtain, scrub, explore, model, interpret;
+- Serialização em XML/JSON é mais usado mas carece de suporte para imagens (binários), Binary serialização é mais rápida, mas menos visual;
 
 ## 3 - Data preparation
 

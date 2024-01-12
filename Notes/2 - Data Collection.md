@@ -1,12 +1,16 @@
 # Data Collection
 
+Há `data` (medida e factos por observação direta), `metadata` (data da data, como permissões e versões), e `information` (data processada, organizada e estruturada).
+
 Informação são dados com contexto. O ciclo de vida da informação normalmente tem os seguintes passos:
+
 - `Ocorrência`: descoberta, design, autor;
 - `Transmissão`: através do acesso ou networking;
 - `Processamento e manipulação`: coletar, validar, modificar, indexar, classificar, filtrar e armazenar;
 - `Utilização`: monitorar, planear, para educar e aprender;
 
 Aumentar o valor dos dados:
+
 - Colocar os dados acessíveis;
 - Combinar os dados, criar um documento coerente dentro do contexto sugerido;
 - Eliminar os dados não estruturados ou nulos;
@@ -51,10 +55,11 @@ O conceito de FAIR (findable, accessible, interoperable, reusable) é usado para
 É importante saber se o autor dos dados é confiável, se pode ser contactado, se os dados são regularmente atualizados, se os dados incluem informação da data da sua aquisição e se são plausíveis.
 
 A serialização dos dados numa pipeline permite uma manipulação in-memory, mas ao mesmo tempo restringe o funcionamento a uma só linguagem de programação. Pode ser de dois formatos:
-- `JSON and XML Serialization`: mais comuns, bastante suportados, mas tem ambiguidade em em termos de números e dados binários (imagens);
+- `JSON and XML Serialization`: mais comuns, bastante suportados, mas tem ambiguidade em termos de números e dados binários (imagens);
 - `Binary Serialization`: menos visual mas é mais compacta e rápida. 
 
 Uma boa escolha de dados passa por estudá-los antes de processá-los:
+
 - Missing data, inconsistent, duplicated, precision problems;
 - Analisar a tendência, como a média, e a dispersão;
 - Diagramas de frequência - histogramas, 
