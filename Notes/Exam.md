@@ -42,6 +42,10 @@
 
 - Tokenization, POS (Parts-of-speech), NER (Named entity recognization), syntatic analysis, Stemming (jumping -> jump), Lemmatization (better -> good);
 - Rule based para identificar entidades, statistical para inferir novos tokens;
+- Lucene (indexing, searching, ranking) e Solr usa Lucene com scalability, REST API, interface, faceting, hightlightling, autocomplete);
+- Faceting, para arranjar os resultados em categorias e cores para store da informação dos documentos indexados;
+- Analysers (texto inicial -> token streams), são para indexing e querying, são constituídos por um Tokenizer (character streams -> token objects) e vários Filters (modificam tokens);
+- Standard, DisMax e eDisMax são Query Parsers. Os últimos permitem erros de sintaxe e complexidade nas queries;
 - 
 
 ## 6 - Query Processing
