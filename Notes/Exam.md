@@ -48,7 +48,13 @@
 - Standard, DisMax e eDisMax são Query Parsers. Os últimos permitem erros de sintaxe e complexidade nas queries;
 - Eficácia (encontrar correcto), eficácia (encontrar rápido);
 - Precision, Recall, F-measure (2PR/(P+R)), Precision-Recall Curves, P@K, MAP. Com P@K descobrimos AvP e com AvP descobrimos MAP;
+- Full inverted indexes, { word: [document index, quantity, [indexes]] };
+- Parametric indexes (por atributo, como nome, date, authors), e zone indexes (por zonas documento, como abstract, introduction);
+- TF (term frequency in the document), DF (document frequency in all system documents), IDF = log(N / DF), TF-IDF = TF * IDF;
+- Boolean Model, Vector Space Model (cada termo é um axis, os documentos e queries são vectores, cosseno exprime a similiaridade entre os documentos, ranking em função do ângulo que separa cada query e os documentos);
+- Unigrams or Bigrams, documentos são ranqueados de acordo com a probabilidade de gerarem a query Q;
 - 
+
 
 ## 6 - Query Processing
 

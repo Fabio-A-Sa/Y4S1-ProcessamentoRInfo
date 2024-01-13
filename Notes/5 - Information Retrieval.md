@@ -239,13 +239,15 @@ A eficiência pode ser medida através de:
 ### Boolean Model
 
 Uma matriz de incidência é simplesmente um modo de representação que indica se o termo da linha X está presente no documento da coluna Y. Este `Boolean Retrieval Model`:
+
 - vê documentos como um conjunto de palavras;
 - tem a facilidade de poder fazer operações bitwise;
-- pode ser considerado um BOW (*Bag of Words*) se for considerado também o número de ocorrências;
+- pode ser considerado um BoW (*Bag of Words*) se for considerado também o número de ocorrências;
 
 ### Inverted Index
 
 Cada palavra é ligada a uma lista de listas, cada uma podendo conter até 3 argumentos:
+
 - `A`: O index do documento onde a palavra está presente;
 - `B`: A quantidade de vezes onde essa palavra está presente naquele documento;
 - `C`: Os indexes, naquele documento, da posição de cada match encontrado;
@@ -253,12 +255,14 @@ Cada palavra é ligada a uma lista de listas, cada uma podendo conter até 3 arg
 ### Parametric and Zone indexes
 
 Há documentos constituídos por mais parâmetros (como data, autores, título) e por isso houve necessidade de criar:
+
 - `parametric indexes`: inverted indexes criados por cada parâmetro. assim conseguimos obter queries mais complexas, como por exemplo "todos os documentos do autor Z que contêm a palavra Y";
 - `zone indexes`: é o mesmo conceito, mas aplicado a uma porção arbitrária do documento, como por exemplo ao abstract ou à conclusão de um paper;
 
 ## Ranking Retrieval
 
-Num sistema grande o modelo booleano não é a melhor opção e houve necessidade de ordenar os documentos por ordem de relevância. Essa relevância pode, por exemplo, ser o resultado da média ponderada de matches em cada zona ou field. <br> 
+Num sistema grande o modelo booleano não é a melhor opção e houve necessidade de ordenar os documentos por ordem de relevância. Essa relevância pode, por exemplo, ser o resultado da média ponderada de matches em cada zona ou field.
+
 O próximo passo da evolução do sistema é não considerar apenas a presença do token mas sim a sua frequência:
 
 - `Term Frequency` (TF) - analisa a frequência num determinado documento. Só isto não é suficiente pois, por exemplo, num conjunto de documentos que são dissertações, a palavra "dissertação" não vai ter relevância para a pesquisa mas vai aparecer muitas vezes;
@@ -270,6 +274,7 @@ O próximo passo da evolução do sistema é não considerar apenas a presença 
 ### TF-IDF
 
 Resulta da multiplicação de TF (a frequência de um dado termo num documento) com IDF (o inverso da frequência desse termo nos documentos em geral). Assim é de prever que:
+
 - o valor será grande para um termo T que apareça muitas vezes num documento e num pequeno número de documentos;
 - o valor será pequeno para um termo T que apareça poucas vezes num documento ou que apareça em muitos documentos;
 - praticamente nulo se o termo T aparecer em todos os documentos;
