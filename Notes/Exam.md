@@ -46,6 +46,8 @@
 - Faceting, para arranjar os resultados em categorias e cores para store da informação dos documentos indexados;
 - Analysers (texto inicial -> token streams), são para indexing e querying, são constituídos por um Tokenizer (character streams -> token objects) e vários Filters (modificam tokens);
 - Standard, DisMax e eDisMax são Query Parsers. Os últimos permitem erros de sintaxe e complexidade nas queries;
+- Eficácia (encontrar correcto), eficácia (encontrar rápido);
+- Precision, Recall, F-measure (2PR/(P+R)), Precision-Recall Curves, P@K, MAP. Com P@K descobrimos AvP e com AvP descobrimos MAP;
 - 
 
 ## 6 - Query Processing
