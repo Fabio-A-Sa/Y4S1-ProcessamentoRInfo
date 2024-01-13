@@ -35,7 +35,8 @@
 
 ## 4 - Data processing
 
-
+- Data models: relational, document, graph, triple store;
+- Document para quando as relações entre entidades são raras, graph para mapear relações frequentes;
 
 ## 5 - Information Retrieval
 

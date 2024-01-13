@@ -4,7 +4,7 @@
 
 ### 1 - Relational Model
 
-É o mais dominante e conhecido. É organizado em relações entre entidades. NoSQL proporciona nestes sistemas uma melhor escalabilidade e queries mais especializadas e flexíveis. 
+É o mais dominante e conhecido. É organizado em relações entre entidades. NoSQL proporciona nestes sistemas uma melhor escalabilidade e queries mais especializadas e flexíveis.
 
 ### 2 - Document Model
 
