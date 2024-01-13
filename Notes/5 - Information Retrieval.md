@@ -172,7 +172,7 @@ Com **eDisMax** podemos simplesmente:
 
 ```note
 defType=edismax&qf=title+content+summary&q=flower
-````
+```
 
 em vez de 
 

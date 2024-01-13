@@ -40,7 +40,9 @@
 
 ## 5 - Information Retrieval
 
-
+- Tokenization, POS (Parts-of-speech), NER (Named entity recognization), syntatic analysis, Stemming (jumping -> jump), Lemmatization (better -> good);
+- Rule based para identificar entidades, statistical para inferir novos tokens;
+- 
 
 ## 6 - Query Processing
 
