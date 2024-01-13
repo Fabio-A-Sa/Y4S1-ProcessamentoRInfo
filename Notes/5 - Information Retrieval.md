@@ -313,7 +313,7 @@ Assim, podem ser usadas para reconhecer línguas, correções de escrita e tradu
 A Web lança desafios em termos de distribuição (pois não é centralizada), tamanho e qualidade dos dados, assim como a diversidade das necessidades e a sua relevância. Assim, os métodos de acesso a esta informação foi classificados em dois grupos:
 
 - `Full-text index search engines`: usam keys e inverted indexes para o ranking dos documentos;
-- `Directories/Taxonomies`: navegam a partir de uma hierarquia estabelecida, através de uma categorização manual, que não é escaláve, tem um alto custo e é sensível a ambiguidades;
+- `Directories/Taxonomies`: navegam a partir de uma hierarquia estabelecida, através de uma categorização manual, que não é escalável, tem um alto custo e é sensível a ambiguidades;
 
 A Web pode ser modelada em termos de um grafo, onde páginas apontam para outras páginas. Há links para outras páginas (out-links, anchor texts) e links para recursos dentro da mesma página (in-links, o `in-degree`).
 
@@ -344,7 +344,7 @@ Podem ser agrupadas em três partes principais:
 #### Robots Exclusion Protocol
 
 - `Server-wide exclusion`: indica os diretórios que não devem ser explorados;
-- `Page-wise exclusions`: através de meta-tags no HTML, como noindex, nofollow;
+- `Page-wide exclusions`: através de meta-tags no HTML, como noindex, nofollow;
 - `Cache exclusions`: para não mostrarem ao utilizador uma cópia da cache local da página;
 
 #### Run
@@ -386,7 +386,7 @@ Conhecido como Hyperlink Induced Topic Search, que é um algoritmo `query depend
 
 ## Leaning to Rank
 
-Através de Machine Learning. O traning set consiste num conjunto de queries, o conjunto de documentos e os julgamentos de relevância. A modelação dos processos podem ser feita através de:
+Através de Machine Learning. O training set consiste num conjunto de queries, o conjunto de documentos e os julgamentos de relevância. A modelação dos processos podem ser feita através de:
 
 - `Pointwise approach`, encontra a relevância de cada documento, tratando o problema como se fosse de regressão;
 - `Pairwise approach`, encontra a relevância entre dois documentos, tratando o problema como se fosse de classificação;

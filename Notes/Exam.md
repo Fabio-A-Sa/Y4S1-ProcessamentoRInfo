@@ -10,6 +10,7 @@
 - [6. Query Processing](#6---query-processing)
 - [7. Entity-Oriented Seach](#7---entity-oriented-search)
 - [8. Search Interfaces](#8---search-interfaces)
+- [9. Project](#9---project)
 
 ## 1 - Introduction
 
@@ -52,9 +53,14 @@
 - Parametric indexes (por atributo, como nome, date, authors), e zone indexes (por zonas documento, como abstract, introduction);
 - TF (term frequency in the document), DF (document frequency in all system documents), IDF = log(N / DF), TF-IDF = TF * IDF;
 - Boolean Model, Vector Space Model (cada termo é um axis, os documentos e queries são vectores, cosseno exprime a similiaridade entre os documentos, ranking em função do ângulo que separa cada query e os documentos);
-- Unigrams or Bigrams, documentos são ranqueados de acordo com a probabilidade de gerarem a query Q;
-- 
-
+- Unigrams or Bigrams, documentos são ranqueados de acordo com a probabilidade de gerarem a query;
+- Information needs: informational, navigational, transactional;
+- Signals, como query-(in)dependent, document-based (HTML), colection-based (links), user-based (clicks). Há três tipos: content (semântica do HTML), structural (links), usage (clicks);
+- Exclusões de crawlers: server-wide (diretórios), page-wide (metatags no html), cache (obriga a mostrar conteúdo sempre novo, não pode ir buscar da cache);
+- Link-based signals: PageRank (probabilidade em random walk), HITS (Hyperlink Induced Topic Search, computação de authorities e hubs);
+- Learn to Rank usa Signals (hand-crafted), enquanto Neural Information Retrieval usa a query e o documento como inputs;
+- BERT (Bidirectional Encoder Representations from Transformers), word embeddings para capturar semântica em vectores condensados;
+- Learn To Rank pode ser pointwise (relevância em cada documento), pairwise (relevância entre documentos, comparação), listwise (ranking de uma lista);
 
 ## 6 - Query Processing
 
@@ -65,4 +71,8 @@
 
 
 ## 8 - Search Interfaces
+
+
+
+## 9 - Project
 
