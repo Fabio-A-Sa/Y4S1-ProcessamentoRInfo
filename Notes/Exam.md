@@ -26,7 +26,12 @@
 
 ## 3 - Data preparation
 
-
+- Cleaning, transformation, normalization, síntese, integration, reduction, selection;
+- Binning ou Discretization: transforma um valor contínuo em categórico;
+- Integration: combinar dados de diferentes fontes;
+- Data filtering é determinística, sampling não-determinística;
+- Data pipelines: reliable, scalable, maintenable;
+- DFD (Data Flow Diagrams): squares para entidades externas, rounded rectangles para processos, arrows, open-ended rectanges for data-stores;
 
 ## 4 - Data processing
 

@@ -38,6 +38,7 @@ As principais ferramentas para automatizar as pipelines são: Makefiles, Apache 
 ### Data Flow Diagrams (DFD)
 
 Uma boa forma de documentar as pipelines:
+
 - `Squares`: para representar entidades externas, sources or destinations;
 - `Rounded rectangles`: os processos, devem ter como input os dados e output um refinamento desses mesmos dados;
 - `Arrows`: o flow dos dados no sistema ou pipeline;
