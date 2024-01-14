@@ -79,7 +79,8 @@
 
 ## 8 - Search Interfaces
 
-
+- Interface: input, control, informational, personalization;
+- Evaluation: IR Style (factos), Empirical (heuristics, IPC), Analytics (estima, low-cost);
 
 ## 9 - Project
 

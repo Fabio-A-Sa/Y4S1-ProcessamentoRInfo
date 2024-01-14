@@ -1,6 +1,7 @@
 # Search User Interfaces
 
 Podemos dividir os componentes ou features de uma search user interface em quatro grupos: 
+
 - `input`, para expressar o que procuram;
 - `control`, para modificar, refinar, restringir ou expandir o input anterior;
 - `informational`, que proporcionam resultados ou informações sobre os resultados;
