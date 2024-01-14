@@ -84,3 +84,11 @@
 
 ## 9 - Project
 
+- 4 datasets;
+- Data preparation: empty/null values, uniform text, range normalization, date formats;
+- Data normalization: remover reviews com menos de X palavras, remover hoteis com menos de X reviews;
+- Data relational model: location - hotel - review;
+- Document: hotel (name, location, average rate), review (date, text, rate);
+- Information needs: best hotels near center of London, breakfast or room service, accessibility, vegetarian/vegan food;
+- Indexing: ascii, lowercase, sinónimos, stopwords;
+- 
