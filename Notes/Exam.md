@@ -91,4 +91,3 @@
 - Document: hotel (name, location, average rate), review (date, text, rate);
 - Information needs: best hotels near center of London, breakfast or room service, accessibility, vegetarian/vegan food;
 - Indexing: ascii, lowercase, sinónimos, stopwords;
-- 
