@@ -46,12 +46,12 @@ Maximiza a diferença entre vectores que representam documentos relevantes e doc
 
 No entanto também há algumas limitações:
 
-- Não aceita erros de escrita, documentos noutra lingua;
+- Não aceita erros de escrita, documentos noutra língua;
 - Os utilizadores podem estar relutantes em dar feedback;
 
 Há hipótese de fazer um `pseudo relevance feedback`, ou seja, sem interação com os utilizadores acabar por admitir que os primeiros K resultados do primeiro conjunto são relevantes e usar esses para afinar a query. Podemos também usar `implicit relevance feedback`, onde há medição do feedback de forma passiva, através de cliques ou links. É sempre melhor do que o método anterior já que há interação, ainda que pouca, do utilizador para o julgamento.
 
-Através de `query expansion` o utilizador opta por dar queries ou termos alternativos, como sinónimos. 
+Através de `query expansion` o utilizador opta por dar queries ou termos alternativos, como sinónimos.
 
 ## Search User Experience
 

@@ -64,7 +64,10 @@
 
 ## 6 - Query Processing
 
-
+- Algoritmos document-at-time e term-at-time;
+- Otimizações: skip pointers (evita ver toda a inverted index list), conjunctive (faz skip a documentos que não possuam todos os termos da query), ignorar termos de alta frequência em term-at-time, ignorar documentos no fim das listas de relevância em document-at-time, caching;
+- Rocchio algorithm: modifica a query de acordo com a query inicial e o feedback relevante/não relevante dos documentos (calcula o centróide);
+- Relevance feedback: explicit, pseudo (afina a query com os primeiros K documentos), implicit (através de clicks e links);
 
 ## 7 - Entity-Oriented Search
 
