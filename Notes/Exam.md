@@ -71,7 +71,11 @@
 
 ## 7 - Entity-Oriented Search
 
-
+- Entities com id, nome, tipo, atributos, relationships;
+- Organizadas em semi-estruturada (wikipédia) ou estruturada (RDF - Resource Description Framework, KB - Knowledge Database);
+- Tipos de necessidades de informação / queries: keyword (normal), structured (SQL), keyword++ (site:up.pt), natural, zero (proative search system);
+- RDF Statement: (subject, predicate, object);
+- Entity linking: para relacionar entidades a texto. Etapas: mention detection, candidate selection, disambiguation;
 
 ## 8 - Search Interfaces
 
