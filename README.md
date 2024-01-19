@@ -17,9 +17,16 @@ This repository contains all the exercises and assessments of the UC Redes de Co
 
 Notes that I take during theoretical lectures in Markdown <br>
 
-### Hotel? Privago (Grade: 18.8/20)
+### Project - Grade: 18.8/20 
 
-![Privago logo](./Project/imgs/logo.png)
+<h1 align = "center" >Hotel?</h1>
+<p align = "center" >
+  <img 
+       title = "Privago logo"
+       src = "./Project/imgs/logo.png" 
+       alt = "Privago Logo" 
+       />
+</p>
 
 The internet's exponential growth demands appropriate systems for harnessing and connecting this massive information resource. This project addresses this need by focusing on the hotel industry, where reviews play a crucial role in shaping consumer choices. This article aims to provide a clear and well-documented explanation of the work needed in developing a robust search engine for hotel reviews. To accomplish this, data is collected from multiple sources, cleaned and prepared, and in-depth data analysis is undertaken.
 
